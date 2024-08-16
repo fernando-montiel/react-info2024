@@ -1,0 +1,8 @@
+.button-category-container {
+    display: flex;
+    align-items: center;
+    height: 84px;
+    background-color: black;
+    margin-left: 220px;
+    padding-top: 74px;
+}

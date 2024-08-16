@@ -1,0 +1,60 @@
+/* RecommendationFirstTypeContainer.module.css */
+
+/* RecommendationContainer.jsx */
+
+.recommendation_container{
+    width: 80vw;
+    max-height: 340px;
+    margin: 3rem calc(220px + 1rem);
+}
+
+.recommendation_container__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.recommendation_container__body:hover {
+    overflow-x: auto;
+}
+
+/* RecommendationCard.jsx */
+
+.recommendation_card_container_style {
+    display: flex;
+    margin: 0 10px 10px 0;
+    color: #FFFFFF;
+
+}
+
+.recommendation_card_container_style > img {
+    height: 48px;
+    width: 48px;
+    margin-right: .5rem;
+}
+
+.recommendation_card_text_style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.recommendation_card_text_style > * {
+    margin-top: 10px;
+}
+
+.recommendation_card_text_style > h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.recommendation_card_text_style > h3 {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #A49D9D;
+}
