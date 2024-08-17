@@ -7,6 +7,7 @@
     height: 330px;
     margin: 1rem calc(220px + 1rem);
     padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .recommendation_container__body {

@@ -1,18 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import {
-      recommendations,
-      recommendations1,
-      recommendationTitleAndSubtitleObject,
-      recommendationSubtitleObject,
-      recommendationsAlbums,
-      recommendationTitleAndSubtitleObjectType2, similarTo
-} from "./lists.js";
-import { TopNavbar } from './components/top-navbar/TopNavbar.jsx'
-import { LeftNavbar } from './components/left-navbar/LeftNavbar.jsx'
+import { allList } from "./lists.js";
+import { Layout } from './components/layout/Layout.jsx'
 import { ButtonCategoryContainer } from './components/button-category-container/ButtonCategoryContainer.jsx'
 import './reset.css';
-import {RecommendationContainer} from "./components/recommendation-container/RecommendationContainer.jsx";
+import { RecommendationContainer } from "./components/recommendation-container/RecommendationContainer.jsx";
 import firstStyleType from './css/RecommendationFirstTypeContainer.module.css';
 import secondStyleType from './css/RecommendationSecondTypeContainer.module.css';
 import thirdStyleType from './css/RecommendationThirdTypeContainer.module.css';
@@ -22,13 +14,17 @@ import fourthStyleType from './css/RecommendationFourthTypeContainer.module.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-      <TopNavbar profileImage={"./src/assets/top-navbar/Avatar.png"} />
-      <LeftNavbar />
-      <ButtonCategoryContainer/>
-      <RecommendationContainer recommendationTitleObject={recommendationTitleAndSubtitleObject} recommendations={recommendations} styleType={firstStyleType}></RecommendationContainer>
-      <RecommendationContainer recommendationTitleObject={recommendationTitleAndSubtitleObject} recommendations={recommendations1} styleType={secondStyleType}></RecommendationContainer>
-      <RecommendationContainer recommendationTitleObject={recommendationSubtitleObject} recommendations={recommendationsAlbums} styleType={thirdStyleType}></RecommendationContainer>
-      <RecommendationContainer recommendationTitleObject={recommendationTitleAndSubtitleObjectType2} recommendations={similarTo} styleType={fourthStyleType}></RecommendationContainer>
+        <Layout>
+            <ButtonCategoryContainer/>
+            <RecommendationContainer recommendationTitleObject={allList.recommendationTitleAndSubtitleObject} recommendations={allList.recommendations} styleType={firstStyleType} buttonText={'More'}></RecommendationContainer>
+            <RecommendationContainer recommendationTitleObject={allList.recommendationTitleAndSubtitleObject} recommendations={allList.recommendations1} styleType={secondStyleType} buttonText={'Play All'}></RecommendationContainer>
+            <RecommendationContainer recommendationTitleObject={allList.recommendationSubtitleObject} recommendations={allList.recommendationsAlbums} styleType={thirdStyleType}></RecommendationContainer>
+            <RecommendationContainer recommendationTitleObject={allList.recommendationTitleAndSubtitleObjectType2} recommendations={allList.similarTo} styleType={fourthStyleType}></RecommendationContainer>
+            <RecommendationContainer recommendationTitleObject={allList.recommendationTitleAndSubtitleObject} recommendations={allList.recommendations} styleType={firstStyleType} buttonText={'More'}></RecommendationContainer>
+            <RecommendationContainer recommendationTitleObject={allList.recommendationTitleAndSubtitleObject} recommendations={allList.recommendations1} styleType={secondStyleType} buttonText={'Play All'}></RecommendationContainer>
+            <RecommendationContainer recommendationTitleObject={allList.recommendationSubtitleObject} recommendations={allList.recommendationsAlbums} styleType={thirdStyleType}></RecommendationContainer>
+            <RecommendationContainer recommendationTitleObject={allList.recommendationTitleAndSubtitleObjectType2} recommendations={allList.similarTo} styleType={fourthStyleType}></RecommendationContainer>
+        </Layout>
   </StrictMode>,
 )
 

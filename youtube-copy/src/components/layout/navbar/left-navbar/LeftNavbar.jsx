@@ -1,8 +1,8 @@
 import React from 'react';
 import './LeftNavbar.css';
-import homeIcon from '../../assets/left-navbar/home.png';
-import exploreIcon from '../../assets/left-navbar/explore.png';
-import musicIcon from '../../assets/left-navbar/music.png';
+import homeIcon from '../../../../assets/left-navbar/home.png';
+import exploreIcon from '../../../../assets/left-navbar/explore.png';
+import musicIcon from '../../../../assets/left-navbar/music.png';
 
 export function LeftNavbar(){
     return(

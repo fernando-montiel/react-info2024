@@ -1,0 +1,25 @@
+.recommendation-container__header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.recommendation-container__header--right-content{
+    display: flex;
+}
+
+.recommendation-container__header--button{
+    width: 104px;
+    height: 40px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 25px;
+    margin-right: 1rem;
+}
+
+.recommendation-container__header--right-content img{
+    width: 40px;
+    height: 40px;
+
+}
