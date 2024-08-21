@@ -9,6 +9,7 @@ import firstStyleType from './css/RecommendationFirstTypeContainer.module.css';
 import secondStyleType from './css/RecommendationSecondTypeContainer.module.css';
 import thirdStyleType from './css/RecommendationThirdTypeContainer.module.css';
 import fourthStyleType from './css/RecommendationFourthTypeContainer.module.css';
+import {NewPlaylistForm} from "./components/NEXT-STEPS/NewPlaylistForm.jsx";
 
 
 
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
         <Layout>
             <ButtonCategoryContainer/>
+            {/*<NewPlaylistForm></NewPlaylistForm>*/}
             <RecommendationContainer recommendationTitleObject={allList.recommendationTitleAndSubtitleObject} recommendations={allList.recommendations} styleType={firstStyleType} buttonText={'More'}></RecommendationContainer>
             <RecommendationContainer recommendationTitleObject={allList.recommendationTitleAndSubtitleObject} recommendations={allList.recommendations1} styleType={secondStyleType} buttonText={'Play All'}></RecommendationContainer>
             <RecommendationContainer recommendationTitleObject={allList.recommendationSubtitleObject} recommendations={allList.recommendationsAlbums} styleType={thirdStyleType}></RecommendationContainer>

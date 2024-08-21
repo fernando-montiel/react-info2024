@@ -239,5 +239,52 @@ export const allList = {
             title: 'Listen Again',
             subtitle: '4.53M Subscribers'
         }
+    ],
+    buttonCategoryContainerList : [
+        {
+            id: 1,
+            name: 'Home'
+        },
+        {
+            id: 2,
+            name: 'Sleep'
+        },
+        {
+            id: 3,
+            name: 'Romance'
+        },
+        {
+            id: 4,
+            name: 'Workout'
+        },
+        {
+            id: 5,
+            name: 'Party'
+        },
+        {
+            id: 6,
+            name: 'Feel good'
+        },
+        {
+            id: 7,
+            name: 'Sad'
+        },
+        {
+            id: 8,
+            name: 'Energize'
+        },
+        {
+            id: 9,
+            name: 'Commute'
+        },
+        {
+            id: 10,
+            name: 'Relax'
+        },
+        {
+            id: 11,
+            name: 'Focus'
+        }
+
     ]
 }
