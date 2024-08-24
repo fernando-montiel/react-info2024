@@ -22,7 +22,7 @@ export function NewPlaylistForm({setIsComplexState, setPlaylist}) {
 
     function handleFormSubmit(event){
         event.preventDefault();
-        if (newPlaylist.title.length !== 6) {
+        if (newPlaylist.title.length <= 6) {
             setValidate('The title must be at least 6 digits.');
             return;
         } else {
