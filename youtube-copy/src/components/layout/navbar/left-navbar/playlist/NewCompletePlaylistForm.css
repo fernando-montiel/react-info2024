@@ -1,0 +1,98 @@
+/* Overlay (black background) */
+.new-complete-playlist__container {
+    display: flex;
+    margin-left: calc(220px + 1rem);
+    background-color: #000000;
+    height: calc(100vh - 82px - 158px);
+}
+
+.complete-modal-content {
+    display: flex;
+    width: 100%;
+    max-height: 100%;
+    gap: 1rem;
+    background-color: #212121;
+    padding: 20px;
+    border: 1px solid rgb(123, 123, 123);
+    border-radius: 8px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow around the pop-up */
+}
+
+/* Additional Styles for Form */
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: #FFFFFF;
+}
+
+form h1{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+form input, form select {
+    border: none;
+    color: #ffffff;
+    border-bottom: 2px solid rgb(133, 133, 133);
+    background: none;
+    outline: none; /* Delete blue border on click */
+    width: 100%;
+    box-sizing: border-box; /* Includes padding on the width */
+    margin-top: 3rem;
+    font-size: 16px;
+}
+
+form select {
+    width: 25%;
+}
+
+form option {
+    background-color: #000000;
+}
+
+form input:focus {
+    border-bottom: 2px solid #3ea6ff;
+}
+
+.button-container {
+    display: flex;
+    align-self: flex-end;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+form button { /* Align the button to the right */
+    border-radius: 25px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+form button:nth-child(1):hover { /* Align the button to the right */
+    background-color: #bebdbd;
+}
+
+.info-complete-review {
+    color: #FFFFFF;
+    flex: 1;
+}
+
+.info-complete-review img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.info-complete-review h2, .info-complete-review p {
+    margin-top: .5rem;
+}
+
+.validate {
+    font-weight: bold;
+    color: #cc0f0f;
+    margin-top: .5rem;
+}

@@ -55,7 +55,7 @@
 .new-playlist-btn {
     display: flex;
     border: none;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: #282828;
     border-radius: 25px;
