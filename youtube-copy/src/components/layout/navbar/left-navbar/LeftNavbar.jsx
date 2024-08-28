@@ -26,17 +26,25 @@ export function LeftNavbar({setIsNewPlaylistOpen, playlist}){
                 </ul>
                 <div className={'left-navbar__border'}></div>
                 <div className={'playlist-container'}>
-                    <button className={'new-playlist-btn'} onClick={ () => setIsNewPlaylistOpen(true) }>
+                    <button className={'new-playlist-btn'} onClick={() => setIsNewPlaylistOpen(true)}>
                         <img alt={'add-playlist'} src={'./src/assets/left-navbar/playlist/plus.png'}/>
                         <p>New playlist</p>
                     </button>
+                    <button className={'new-playlist-btn'}>
+                        <img alt={'add-complete-playlist'} src={'./src/assets/left-navbar/playlist/plus.png'}/>
+                        <p>New complete playlist</p>
+                    </button>
                     <ul>
                         {playlist.map((list) => (
-                                <Playlist key={list.id} isActive={false} img={list.image} title={list.title} description={list.description} />
+                            <Playlist key={list.id} isActive={false} img={list.image} title={list.title}
+                                      description={list.description}/>
                         ))}
-                        <Playlist isActive={true} title={'Relax'} description={'Fernando Ezequiel Montiel'} img={'https://th.bing.com/th/id/OIP.2HdtA159rfeGAjSJH6yFKQHaEo?w=277&h=180&c=7&r=0&o=5&pid=1.7'} ></Playlist>
-                        <Playlist isActive={false} title={'Religion'} description={'Fernando Ezequiel Montiel'} img={'https://i.pinimg.com/originals/8f/19/4a/8f194a79a6161349d143ba2e347e8234.jpg'}></Playlist>
-                        <Playlist isActive={false} title={'Rock'} description={'Fernando Ezequiel Montiel'} img={'https://cdn.wallpapersafari.com/97/87/LdECwe.jpg'}></Playlist>
+                        <Playlist isActive={true} title={'Relax'} description={'Fernando Ezequiel Montiel'}
+                                  img={'https://th.bing.com/th/id/OIP.2HdtA159rfeGAjSJH6yFKQHaEo?w=277&h=180&c=7&r=0&o=5&pid=1.7'}></Playlist>
+                        <Playlist isActive={false} title={'Religion'} description={'Fernando Ezequiel Montiel'}
+                                  img={'https://i.pinimg.com/originals/8f/19/4a/8f194a79a6161349d143ba2e347e8234.jpg'}></Playlist>
+                        <Playlist isActive={false} title={'Rock'} description={'Fernando Ezequiel Montiel'}
+                                  img={'https://cdn.wallpapersafari.com/97/87/LdECwe.jpg'}></Playlist>
                     </ul>
                 </div>
             </nav>
