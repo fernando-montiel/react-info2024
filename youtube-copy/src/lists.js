@@ -285,6 +285,5 @@ export const allList = {
             id: 11,
             name: 'Focus'
         }
-
     ]
 }
