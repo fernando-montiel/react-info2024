@@ -1,0 +1,12 @@
+.video-container {
+    display: flex;
+    margin-left: 220px;
+    background-color: #FFFFFF;
+    width: 450px;
+    height: 450px;
+    color: #212121;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
